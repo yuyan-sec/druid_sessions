@@ -35,18 +35,7 @@ func get(url string) {
 		return
 	}
 	if r.StatusCode == 200 {
-		re := regexp.MustCompile(`"SESSIONID":"(.*?)"`)
-		json := re.FindAllStringSubmatch(string(body), -1)
-		var result string
-		for _, v := range json {
-			result += v[1] + "\n"
-			err := ioutil.WriteFile("./sessions.txt", []byte(result), 0644)
-			if err != nil {
-				fmt.Println(err)
-				return
-			}
-		}
-		fmt.Println("success")
+		re(string(body))
 	} else {
 		fmt.Println("fail")
 	}
@@ -59,8 +48,12 @@ func file(filename string) {
 		fmt.Println(err)
 		return
 	}
+	re(string(f))
+}
+
+func re(str string) {
 	re := regexp.MustCompile(`"SESSIONID":"(.*?)"`)
-	json := re.FindAllStringSubmatch(string(f), -1)
+	json := re.FindAllStringSubmatch(string(str), -1)
 	var result string
 	for _, v := range json {
 		result += v[1] + "\n"
@@ -79,7 +72,7 @@ func main() {
 http://127.0.0.1/druid/websession.json
 http://127.0.0.1/system/druid/websession.json
 http://127.0.0.1/webpage/system/druid/websession.json`)
-	flag.StringVar(&filename, "f", "", "本地文件地址：./test.json")
+	flag.StringVar(&filename, "f", "", "本地文件地址：./websession.json")
 	flag.Parse()
 	if url != "" {
 		get(url)
