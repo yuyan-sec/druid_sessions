@@ -10,6 +10,11 @@ cwkiller师傅的利用文章：https://www.cnblogs.com/cwkiller/p/12483223.html
 
 ### GUI 版本：
 
+远程演示效果
+![](https://raw.githubusercontent.com/yuyan-sec/druid_sessions/main/image/gui-1.png)
+
+本地演示效果
+![](https://raw.githubusercontent.com/yuyan-sec/druid_sessions/main/image/gui-2.png)
 
 
 ### 工具说明：
@@ -19,7 +24,7 @@ cwkiller师傅的利用文章：https://www.cnblogs.com/cwkiller/p/12483223.html
 - -f  参数，一般在需要登录druid通过保存文件到本地进行使用
 
 
-![](https://raw.githubusercontent.com/yuyan-sec/druid_sessions/main/1.png)
+![](https://raw.githubusercontent.com/yuyan-sec/druid_sessions/main/image/1.png)
 
 ----
 
