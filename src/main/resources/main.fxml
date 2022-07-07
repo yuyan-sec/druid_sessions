@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="94.0" layoutX="3.0" layoutY="3.0" stroke="#a8a8a8" strokeType="INSIDE" width="833.0" />
+      <TextArea fx:id="sessions" layoutX="3.0" layoutY="102.0" prefHeight="461.0" prefWidth="260.0" />
+      <TextArea fx:id="urls" layoutX="265.0" layoutY="102.0" prefHeight="461.0" prefWidth="284.0" />
+      <TextArea fx:id="sql" layoutX="552.0" layoutY="102.0" prefHeight="461.0" prefWidth="284.0" />
+      <TextField fx:id="url" layoutX="66.0" layoutY="8.0" prefHeight="34.0" prefWidth="455.0" promptText="URL 默认带有路径：/druid/*" />
+      <TextField fx:id="jdbc" layoutX="66.0" layoutY="53.0" prefHeight="34.0" prefWidth="455.0" />
+      <Label layoutX="14.0" layoutY="15.0" text="URL：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="60.0" text="JDBC：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="15.0" text="User：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="60.0" text="Pass：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" layoutX="572.0" layoutY="8.0" prefHeight="34.0" prefWidth="155.0" />
+      <TextField fx:id="pass" layoutX="572.0" layoutY="53.0" prefHeight="34.0" prefWidth="155.0" />
+      <Button layoutX="730.0" layoutY="7.0" mnemonicParsing="false" onAction="#BtnExp" prefHeight="34.0" prefWidth="102.0" text="未授权利用">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="730.0" layoutY="53.0" mnemonicParsing="false" onAction="#BtnLogin" prefHeight="34.0" prefWidth="102.0" text="登录后利用">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
