@@ -84,6 +84,8 @@ public class Controller {
 
     public static HashMap<String, String> httpGet(String url,String cookie){
         HttpRequest httpRequest = HttpRequest.get(url).followRedirects(false).header("Cookie",cookie);
+        httpRequest.trustAllCerts();
+        httpRequest.trustAllHosts();
         hashMap.put("body", httpRequest.body());
         hashMap.put("code", String.valueOf(httpRequest.code()));
         return hashMap;
@@ -91,6 +93,8 @@ public class Controller {
 
     public static HashMap<String, String> httpPost(String url, String data){
         HttpRequest httpRequest = HttpRequest.post(url).send(data);
+        httpRequest.trustAllCerts();
+        httpRequest.trustAllHosts();
         hashMap.put("body", httpRequest.body());
         hashMap.put("code", String.valueOf(httpRequest.code()));
         hashMap.put("set-cookie",httpRequest.header("Set-Cookie"));
