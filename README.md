@@ -10,7 +10,10 @@ cwkiller师傅的利用文章：https://www.cnblogs.com/cwkiller/p/12483223.html
 
 从druid未授权到getshell：https://xz.aliyun.com/t/10110
 
-
+### Linux 可以使用 druid.sh , 需要安装 jq
+```
+bash druid.sh URL USERNAME PASSWORD
+```
 
 ### 工具说明：
 
