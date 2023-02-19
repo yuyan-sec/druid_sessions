@@ -18,7 +18,7 @@ cwkiller师傅的利用文章：https://www.cnblogs.com/cwkiller/p/12483223.html
 
 默认请求带有 /druid/* 相关路径
 
-![1](1.png)
+![1](gui.png)
 
 
 GUI 界面参考：https://github.com/f0ng/poc2jar
