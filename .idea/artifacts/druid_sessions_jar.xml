@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="druid_sessions:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/druid_sessions_jar</output-path>
+    <root id="archive" name="druid_sessions.jar">
+      <element id="module-output" name="druid_sessions" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/me/gv7/woodpecker/woodpecker-requests/0.2.1/woodpecker-requests-0.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/dongliu/commons/8.1.0/commons-8.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/alibaba/fastjson2/fastjson2/2.0.57/fastjson2-2.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/formdev/flatlaf/3.5.4/flatlaf-3.5.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
